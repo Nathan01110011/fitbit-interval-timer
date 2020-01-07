@@ -1,3 +1,34 @@
 <svg class="background">
-  <text id="demotext" x="50%" y="50%+15">Hello World!</text>
+
+  <text id="timer-text" />
+     <text id="set-text">Set 0</text>
+     <text id="current-time" />
+
+  <!-- Reset/Skip Buttons -->
+  <use id="btn-reset" href="#combo-button-upper-right" fill="fb-red">
+    <set href="combo-button-icon" attributeName="href" to="icons/x.png"/>
+    <set href="combo-button-icon-press" attributeName="href" to="icons/x_press.png"/>
+    <set href="combo-button-stroke" attributeName="display" to="inline"/>
+  </use>
+  <use id="btn-skip" href="#combo-button-upper-right" fill="royalblue" display="none">
+    <set href="combo-button-icon" attributeName="href" to="icons/skip.png"/>
+    <set href="combo-button-icon-press" attributeName="href" to="icons/skip_press.png"/>
+    <set href="combo-button-stroke" attributeName="display" to="inline"/>
+  </use>
+
+<!-- Play/Pause Buttons -->
+    <use id="btn-play" href="#combo-button-lower-right" fill="green">
+      <set href="combo-button-icon" attributeName="href" to="icons/play.png"/>
+      <set href="combo-button-icon-press" attributeName="href" to="icons/play_press.png"/>
+      <set href="combo-button-stroke" attributeName="display" to="inline"/>
+    </use>
+      <use id="btn-pause" href="#combo-button-lower-right" fill="gray" display="none">
+        <set href="combo-button-icon" attributeName="href" to="icons/pause.png"/>
+        <set href="combo-button-icon-press" attributeName="href" to="icons/pause_press.png"/>
+        <set href="combo-button-stroke" attributeName="display" to="inline"/>
+      </use>
+
+  <arc id="circBack" fill="#404040" display="inline" />
+  <arc id="circ" fill="#15A8F1" display="inline" />
+
 </svg>

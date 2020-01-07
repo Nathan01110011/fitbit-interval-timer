@@ -1,15 +1,25 @@
 {
   "fitbit": {
     "appType": "app",
+    "appDisplayName": "Interval Timer",
     "wipeColor": "#8bc34a",
     "buildTargets": [
       "higgs",
       "meson",
       "gemini",
       "mira"
-    ]
+    ],
+    "appUUID": "bc24d7f3-e462-4b51-a3a8-45551e387b7d"
   },
   "devDependencies": {
-    "@fitbit/sdk": "~4.1.0"
+    "@fitbit/sdk": "~4.1.0",
+    "@fitbit/sdk-cli": "^1.7.0"
+  },
+  "dependencies": {
+    "fitbit": "0.0.7",
+    "lodash": "^4.17.15"
+  },
+  "scripts": {
+    "build": "fitbit-build"
   }
 }

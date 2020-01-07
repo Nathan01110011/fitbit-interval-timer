@@ -1,12 +1,49 @@
 .background {
-  viewport-fill: fb-cyan;
+  viewport-fill: white;
 }
 
-#demotext {
+#current-time {
+  font-size: 55;
+  font-family: SevilleSharp-Regular;
+  text-length: 32;
+  x: 60%;
+  y: 55%;
   fill: black;
-  font-size: 32;
-  font-family: System-Regular;
-  font-weight: bold;
+}
+
+#timer-text {
+  font-size: 40;
+  font-family: SevilleSharp;
+  x: 5%;
+  y: 53%;
+  text-length: 7;
+}
+
+#set-text {
+  font-size: 40;
+  font-family: SevilleSharp-Book;
+  x: 50%;
+  y: 10%;
   text-anchor: middle;
-  text-length: 99;
+  text-length: 7;
+}
+
+#circBack {
+  x: -150;
+  y: 0%;
+  start-angle: 0;
+  sweep-angle: 180;
+  width: 300;
+  height: 300;
+  arc-width: 20;
+}
+
+#circ {
+  x: -150;
+  y: 0%;
+  start-angle: 0;
+  sweep-angle: 180;
+  width: 300;
+  height: 300;
+  arc-width: 20;
 }
