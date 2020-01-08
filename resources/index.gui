@@ -1,11 +1,15 @@
-<svg class="background">
+<svg id="bg" class="background">
 
-  <text id="timer-text" />
-     <text id="set-text">Set 0</text>
-     <text id="current-time" />
+
+  <text id="countdown-text-shadow" class="countdown-text shadow">Ready</text>
+  <text id="countdown-text" class="countdown-text"/>
+  <text id="set-text-shadow" class="set-text shadow">Set 1</text>
+  <text id="set-text" class="set-text">Set 1</text>
+  <text id="time-text-shadow" class="time-text shadow" />
+  <text id="time-text" class="time-text" />
 
   <!-- Reset/Skip Buttons -->
-  <use id="btn-reset" href="#combo-button-upper-right" fill="fb-red">
+  <use id="btn-reset" href="#combo-button-upper-right" fill="fb-red" display="none">
     <set href="combo-button-icon" attributeName="href" to="icons/x.png"/>
     <set href="combo-button-icon-press" attributeName="href" to="icons/x_press.png"/>
     <set href="combo-button-stroke" attributeName="display" to="inline"/>
@@ -28,7 +32,7 @@
         <set href="combo-button-stroke" attributeName="display" to="inline"/>
       </use>
 
-  <arc id="circBack" fill="#404040" display="inline" />
-  <arc id="circ" fill="#15A8F1" display="inline" />
+  <arc id="circBack" display="inline" />
+  <arc id="circ" class="circ" display="inline" />
 
 </svg>
