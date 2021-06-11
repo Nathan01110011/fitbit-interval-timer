@@ -1,83 +1,74 @@
 
 .time-text {
     font-size: 55;
-    font-family: SevilleSharp-Regular;
+    font-family: System-Regular;
     text-length: 60;
-    x: 210;
-    y: 159;
-    fill: black;
+    x: 168;
+    y: 59;
+    fill: white;
     text-anchor: middle;
 }
 
 .time-text.shadow {
-  x: 211;
-  y: 160;
+  x: 169;
+  y: 60;
   fill: #343434;
 }
 
 .countdown-text {
     font-size: 35;
-    font-family: SevilleSharp;
-    x: 6;
-    y: 140;
+    font-family: System-Regular;
+    x: 168;
+    y: 214;
     text-length: 7;
+    text-anchor: middle;
+    fill: white;
 }
 
 .countdown-text.shadow {
-  x: 7;
-  y: 141;
+  x: 169;
+  y: 215;
   fill: #323232;
 }
 
 .set-text {
     font-size: 40;
-    font-family: SevilleSharp-Regular;
-    x: 166;
-    y: 110;
+    font-family: System-Regular;
+    x: 168;
+    y: 179;
     text-length: 7;
+    text-anchor: middle;
+    fill: white;
 }
 
 .set-text.shadow {
-  x: 167;
-  y: 111;
+  x: 169;
+  y: 180;
   fill: #323232;
 }
 
 .circ {
-    x: -125;
-    y: 0%;
-    start-angle: 0;
+    x: 17;
+    y: 90;
+    start-angle: 270;
     sweep-angle: 180;
-    width: 250;
-    height: 250;
-    arc-width: 20;
+    width: 300;
+    height: 300;
+    arc-width: 40;
+    fill: royalblue;
 }
 
 #circBack {
-    x: -125;
-    y: 0%;
-    start-angle: 0;
+    x: 17;
+    y: 90;
+    start-angle: 270;
     sweep-angle: 180;
-    width: 250;
-    height: 250;
-    arc-width: 20;
+    width: 300;
+    height: 300;
+    arc-width: 40;
     fill: #404040;
 }
 
-/*Red Theme*/
-.background-red {
-    viewport-fill: indianred;
-}
-
-.text-red {
-    fill: #5d0013;
-}
-
-.arc-red {
-    fill: darkred;
-}
-
-/*Black Theme*/
 .background-black {
     viewport-fill: black;
 }
@@ -90,29 +81,19 @@
     fill: white;
 }
 
-/*White Theme*/
-.background-white {
-    viewport-fill: white;
+.application-fill           { fill: fb-cyan; }
+.start-button-fill           { fill: fb-green; }
+.foreground-fill            { fill: fb-white; }
+.background-fill            { fill: fb-black; }
+
+#button-1 #text {
+  text-buffer: "Reset";
 }
 
-.text-white {
-    fill: #343434;
+#button-2 #text {
+  text-buffer: "Continue";
 }
 
-.arc-white {
-    fill: black;
-}
-
-/*Blue Theme*/
-.background-blue {
-    viewport-fill: cornflowerblue;
-}
-
-.text-blue {
-    fill: lightsteelblue;
-}
-
-.arc-blue {
-    fill: blue;
-}
-
+#button-start #text {
+    text-buffer: "Start";
+  }

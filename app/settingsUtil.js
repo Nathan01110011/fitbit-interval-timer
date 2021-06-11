@@ -25,7 +25,6 @@ export const loadSettings = () => {
     } catch (e) {
         settings = defaultSettings;
     }
-    changeBackground();
 };
 
 function mergeWithDefaultSettings() {
@@ -51,12 +50,4 @@ function transformSettings() {
     } else {
         settings.timerValue = settings.timerValue.values[0].value.valueOf();
     }
-}
-
-function changeBackground() {
-    time.class = "time-text text-" + settings.backgroundColor;
-    timer.class = "countdown-text text-" + settings.backgroundColor;
-    set.class = "set-text text-" + settings.backgroundColor;
-    bg.class = "background-" + settings.backgroundColor;
-    arc.class = "circ arc-" + settings.backgroundColor;
 }
