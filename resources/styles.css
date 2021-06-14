@@ -3,14 +3,14 @@
     font-size: 55;
     font-family: System-Regular;
     text-length: 60;
-    x: 168;
+    x: 240;
     y: 59;
     fill: white;
     text-anchor: middle;
 }
 
 .time-text.shadow {
-  x: 169;
+  x: 241;
   y: 60;
   fill: #343434;
 }
@@ -19,7 +19,7 @@
     font-size: 35;
     font-family: System-Regular;
     x: 168;
-    y: 214;
+    y: 220;
     text-length: 7;
     text-anchor: middle;
     fill: white;
@@ -27,24 +27,34 @@
 
 .countdown-text.shadow {
   x: 169;
-  y: 215;
+  y: 221;
   fill: #323232;
 }
 
 .set-text {
-    font-size: 40;
+    font-size: 55;
     font-family: System-Regular;
-    x: 168;
-    y: 179;
+    x: 100;
+    y: 59;
     text-length: 7;
     text-anchor: middle;
     fill: white;
 }
 
 .set-text.shadow {
-  x: 169;
-  y: 180;
+  x: 101;
+  y: 60;
   fill: #323232;
+}
+
+.current-set-mode {
+  font-size: 40;
+  font-family: System-Regular;
+  x: 168;
+  y: 190;
+  text-anchor: middle;
+  text-length: 100;
+  fill: white;
 }
 
 .circ {
@@ -86,12 +96,12 @@
 .foreground-fill            { fill: fb-white; }
 .background-fill            { fill: fb-black; }
 
-#button-1 #text {
+#button-reset #text {
   text-buffer: "Reset";
 }
 
-#button-2 #text {
-  text-buffer: "Continue";
+#button-pause #text {
+  text-buffer: "Pause";
 }
 
 #button-start #text {

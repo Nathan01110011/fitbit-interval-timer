@@ -1,19 +1,11 @@
-import {inbox} from "file-transfer";
-import {readFileSync} from "fs";
-import * as cbor from 'cbor';
-import document from 'document';
+import { inbox } from "file-transfer";
+import { readFileSync } from "fs";
 
 let defaultSettings = {
-    timerValue: 60,
+    restTimerValue: 60,
     backgroundColor: 'black'
 };
 inbox.onnewfile = processInbox;
-
-const time = document.getElementById("time-text");
-const arc = document.getElementById("circ");
-const bg = document.getElementById("bg");
-const timer = document.getElementById("countdown-text");
-const set = document.getElementById("set-text");
 
 export let settings = defaultSettings;
 
@@ -23,6 +15,8 @@ export const loadSettings = () => {
         transformSettings();
         mergeWithDefaultSettings();
     } catch (e) {
+        console.log('Settings Broken!')
+        console.log(e)
         settings = defaultSettings;
     }
 };
@@ -45,9 +39,18 @@ function processInbox() {
 }
 
 function transformSettings() {
-    if (settings.toggle) {
-        settings.timerValue = parseInt(settings.input.name);
+    if (settings.customRestToggle) {
+        settings.restTimerValue = parseInt(settings.customRestTime.name);
     } else {
-        settings.timerValue = settings.timerValue.values[0].value.valueOf();
+        settings.restTimerValue = settings.restTimerValue.values[0].value.valueOf();
+    }
+    try {
+        if (settings.customExerciseTimeToggle) {
+            settings.exerciseTimerValue = parseInt(settings.customExerciseTime.name);
+        } else {
+            settings.exerciseTimerValue = settings.exerciseTimerValue.values[0].value.valueOf();
+        }
+    } catch (e) {
+        settings.exerciseTimerValue = 30;
     }
 }

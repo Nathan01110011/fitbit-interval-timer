@@ -8,14 +8,19 @@
   <text id="time-text-shadow" class="time-text shadow" />
   <text id="time-text" class="time-text" />
 
+  <text id="current-set-mode" class="current-set-mode" />
 
-  <!-- <use id="button-1" href="#text-button" class="text-button bottom left secondary application-fill"  />
-  <use id="button-2" href="#text-button" class="text-button bottom right application-fill" /> -->
+
+  <arc id="circBack" display="inline" />
+  <arc id="circ" class="circ" display="inline" />
+  <!-- <arc id="circ-exercise" class="circ"  /> -->
+
+  <use id="button-reset" href="#text-button" class="text-button bottom left secondary application-fill"  />
+  <use id="button-pause" href="#text-button" class="text-button bottom right application-fill" />
 
 
   <use id="button-start" href="#text-button" class="text-button bottom start-button-fill" />
 
-  <arc id="circBack" display="inline" />
-  <arc id="circ" class="circ" display="inline" />
+
 
 </svg>

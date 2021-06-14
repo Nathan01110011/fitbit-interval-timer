@@ -1,13 +1,13 @@
 {
   "fitbit": {
     "appType": "app",
-    "appDisplayName": "Interval Timer",
+    "appDisplayName": "Gym Timer",
     "wipeColor": "#4a9fc3",
     "buildTargets": [
       "atlas",
       "vulcan"
     ],
-    "appUUID": "bc24d7f3-e462-4b51-a3a8-45551e387b7d"
+    "appUUID": "bb940e19-5b98-4d6e-8ecc-bc199375230e"
   },
   "devDependencies": {
     "@fitbit/sdk": "~5.0.2",
