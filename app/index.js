@@ -53,6 +53,10 @@ function timerCountdown() {
     timeElapsed = (Date.now() - lastValueTimestamp) / 1000;
 
     let updated = Math.round((currentTimer - timeElapsed) * 10);
+    // Sometimes the above can throw a negative number which is weird but this fixes it
+    if (updated < 0) {
+        updated = 0;
+    }
     let string = updated.toString();
     countdownText.text = countdownShadow.text = addDecimalPoint(updated.toString());
 
@@ -90,8 +94,6 @@ function resetTimer() {
             lastValueTimestamp = Date.now();
             countdownInterval = setInterval(timerCountdown, 100);
             setPlaying();
-
-
         } else {
             nextTimerRest = true;
             currentSetMode.text = 'Exercise'
