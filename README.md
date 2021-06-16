@@ -6,7 +6,7 @@ Gym Interval Timer for Fitbit Versa and Ionic Devices
 
 ## Old Version
 
-### Ionic
+### Versa
 ![Versa](/screenshots/versa1.png)
 
 ### Ionic
