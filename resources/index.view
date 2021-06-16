@@ -1,0 +1,26 @@
+<svg id="bg" class="background">
+
+
+  <text id="countdown-text-shadow" class="countdown-text shadow">Ready</text>
+  <text id="countdown-text" class="countdown-text"/>
+  <text id="set-text-shadow" class="set-text shadow">Set 1</text>
+  <text id="set-text" class="set-text">Set 1</text>
+  <text id="time-text-shadow" class="time-text shadow" />
+  <text id="time-text" class="time-text" />
+
+  <text id="current-set-mode" class="current-set-mode" />
+
+
+  <arc id="circBack" display="inline" />
+  <arc id="circ" class="circ" display="inline" />
+  <!-- <arc id="circ-exercise" class="circ"  /> -->
+
+  <use id="button-reset" href="#text-button" class="text-button bottom left secondary application-fill"  />
+  <use id="button-pause" href="#text-button" class="text-button bottom right application-fill" />
+
+
+  <use id="button-start" href="#text-button" class="text-button bottom start-button-fill" />
+
+
+
+</svg>

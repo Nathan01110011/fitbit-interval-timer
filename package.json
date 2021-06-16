@@ -1,23 +1,22 @@
 {
   "fitbit": {
     "appType": "app",
-    "appDisplayName": "Interval Timer",
-    "wipeColor": "#8bc34a",
+    "appDisplayName": "Gym Timer",
+    "wipeColor": "#4a9fc3",
     "buildTargets": [
-      "higgs",
-      "meson",
-      "gemini",
-      "mira"
+      "atlas",
+      "vulcan"
     ],
-    "appUUID": "bc24d7f3-e462-4b51-a3a8-45551e387b7d"
+    "appUUID": "bb940e19-5b98-4d6e-8ecc-bc199375230e"
   },
   "devDependencies": {
-    "@fitbit/sdk": "~4.1.0",
-    "@fitbit/sdk-cli": "^1.7.0"
+    "@fitbit/sdk": "~5.0.2",
+    "@fitbit/sdk-cli": "^1.7.3"
   },
   "dependencies": {
     "fitbit": "0.0.7",
-    "lodash": "^4.17.15"
+    "keytar": "^7.7.0",
+    "lodash": "^4.17.20"
   },
   "scripts": {
     "build": "fitbit-build"
